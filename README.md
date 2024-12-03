@@ -4,8 +4,7 @@ reference [https://crxjs.dev/vite-plugin/getting-started/react/create-project](h
 ## install
 
 ```bash
-pnpm create vite extension-with-vite-sample --template react-ts && \
- cd extension-with-vite-sample && pnpm i
+pnpm create vite extension-with-vite-sample --template react-ts && cd extension-with-vite-sample && pnpm i
 
 pnpm i -D @crxjs/vite-plugin@beta
 pnpm i @types/chrome @extend-chrome/storage
@@ -39,6 +38,7 @@ export const manifest = {
   action: {
     default_popup: "index.html",
   },
+  options_page: "option.html",
 } satisfies chrome.runtime.ManifestV3
 ```
 
